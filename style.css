@@ -1,0 +1,88 @@
+body {
+  margin: 30px;
+}
+
+header {
+  background-color: #6a72ec;
+  display: flex;
+  justify-content: space-evenly;
+  height: 100px;
+  /* text-transform: uppercase; */
+  /* border-bottom: 0.5px solid black; */
+  align-items: center;
+}
+
+/* header > h1 {
+  text-transform: uppercase;
+} */
+
+/* .monthly-calender {
+  display: flex;
+} */
+
+.big-screen,
+.small-screen {
+  text-transform: uppercase;
+}
+
+.small-screen {
+  visibility: hidden;
+}
+
+.big-screen,
+.small-screen,
+.row-1,
+.row-2,
+.row-3,
+.row-4,
+.row-5,
+.row-6 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 55px;
+  background-color: #8d90ff;
+  margin-bottom: 0.5em;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7 {
+  /* border: 1px blueviolet solid; */
+  display: flex;
+  width: 70px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  /* height: inherit; */
+  /* text-transform: uppercase; */
+}
+
+.col-1 {
+  color: red;
+}
+
+@media screen and (max-width: 740px) and (min-width: 100px) {
+  .small-screen {
+    visibility: visible;
+  }
+
+  .big-screen {
+    visibility: hidden;
+    display: none;
+  }
+
+  /* header {
+    background-color: chocolate;
+  } */
+
+  header > h1 {
+    text-transform: uppercase;
+    /* border: 1px solid black; */
+    font-weight: bold;
+  }
+}
